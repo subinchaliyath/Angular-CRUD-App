@@ -1,0 +1,10 @@
+<form (ngSubmit)="OnSubmit()">
+    <input 
+    type="text" 
+    name="title" 
+    [(ngModel)]="title"
+    placeholder="Add Todo.."
+    (keyup.enter)="OnSubmit"
+    >
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>

@@ -1,0 +1,17 @@
+.header-items{
+    background-color: black;
+    text-align: center;
+    padding: 0.5rem;
+
+}
+
+.header-items h2{
+    color:white;
+}
+.header-items nav{
+    color: white;
+}
+.header-items a{
+    color:white;
+    text-decoration: none;
+}

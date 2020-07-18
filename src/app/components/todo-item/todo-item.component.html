@@ -1,8 +1,15 @@
-<div [ngClass]="setClass()">
-    <p>
-        <input type="checkbox" (change)="onToggle(todo)" name="check" id="check">
-        {{todo.title}}
-        <button type="button" (click)="onDelete(todo)">x</button>
 
-    </p>
+
+<div class="container">
+    <form [ngClass]="setClass()" class="form-group" >
+        <div class="form-row">
+          <div class="col-10">
+        <input type="checkbox" (change)="onToggle(todo)" class="formControl" name="check" id="check">
+        {{todo.title}}
+          </div>
+          <div class="col-2">
+    <button type="button" class="btn btn-danger formControl"  (click)="onDelete(todo)">x</button>
+          </div>
+        </div>
+      </form>
 </div>

@@ -1,10 +1,19 @@
-<form (ngSubmit)="OnSubmit()">
-    <input 
-    type="text" 
-    name="title" 
-    [(ngModel)]="title"
-    placeholder="Add Todo.."
-    (keyup.enter)="OnSubmit"
-    >
-    <button type="submit" class="btn btn-primary">Add</button>
-</form>
+<div class="container-fluid" [ngStyle]="{margin:'.3rem 0'}">
+    <form (ngSubmit)="OnSubmit()">
+        <div class="form-row">
+          <div class="col-10">
+            <input 
+            type="text" 
+            name="title" 
+            [(ngModel)]="title"
+            placeholder="Add Todo.."
+            (keyup.enter)="OnSubmit"
+            class="form-control"
+            >
+          </div>
+          <div class="col-2">
+            <button type="submit"  class="form-control" class="btn btn-primary">Add</button>
+          </div>
+        </div>
+      </form>
+</div>

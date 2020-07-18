@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-4 offset-4">
+        <div class="col-md-4 offset-md-4">
             <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
             <app-todo-item 
             *ngFor="let todo of todos" 
@@ -8,6 +8,9 @@
             (deleteTodo)="deleteTodo($event)"
             >
             </app-todo-item>
+        </div>
+        <div class="col-md-4">
+
         </div>
         
     </div>
